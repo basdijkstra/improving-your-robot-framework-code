@@ -30,3 +30,8 @@ Start Chrome
     Call Method    ${options}    add_experimental_option    prefs    ${prefs}
     Open Browser    ${url}    chrome    options=${options}
     Maximize Browser Window
+
+Start Firefox
+    [Arguments]    ${url}
+    Open Browser    ${url}  firefox
+    Maximize Browser Window

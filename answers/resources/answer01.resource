@@ -13,6 +13,11 @@ Start Chrome
     Open Browser    ${url}    chrome    options=${options}
     Maximize Browser Window
 
+Start Firefox
+    [Arguments]    ${url}
+    Open Browser    ${url}    firefox
+    Maximize Browser Window
+
 Wait And Type
     [Arguments]    ${locator}  ${value}
     Wait Until Element Is Enabled    ${locator}
